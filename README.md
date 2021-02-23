@@ -21,5 +21,8 @@ Console output :
 
 ![None](images/training.png?raw=true "Training")
 
-# Training results :
+# Training results
 ![None](images/results.gif?raw=true "Training results")
+
+# Sample predictions
+![None](images/prediction.png?raw=true "Sample predictions")
