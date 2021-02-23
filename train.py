@@ -15,11 +15,21 @@ from activations import SigmoidLayer
 from losses import MSE
 from models import Model
 
-lr = 0.001
-epochs = 100
-batch_size = 32
-model_path = 'nn.weights.hieu'
-checkpoint_step = 5
+from argparse import ArgumentParser
+
+parser = ArgumentParser()
+parser.add_argument('--epochs', required=True, type=int, help='Number of training iterations')
+parser.add_argument('--lr', required=True, type=float, help='Learning rate')
+parser.add_argument('--batch_size', required=True, type=int, help='Number of images per batch')
+parser.add_argument('--model_path', required=True, type=str, help='Path to weights file')
+parser.add_argument('--checkpoint_step', required=True, type=int, help='Number of steps interval to make a checkpoint')
+args = vars(parser.parse_args())
+
+lr = args['lr']
+epochs = args['epochs']
+batch_size = args['batch_size']
+model_path = args['model_path']
+checkpoint_step = args['checkpoint_step']
 
 mean_losses = []
 val_losses = []
