@@ -16,3 +16,6 @@ $ python3 train.py --epochs <EPOCHS> \ # number of train iterations
 				   --checkpoint_step <STEPS> \ # How often you want the model to checkpoint
 				   --model_path <PATH> # The model's weights file
 ```
+
+# Training results :
+![None](images/results.gif?raw=true "Training results")
