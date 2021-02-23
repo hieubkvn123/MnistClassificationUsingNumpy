@@ -17,5 +17,9 @@ $ python3 train.py --epochs <EPOCHS> \ # number of train iterations
 				   --model_path <PATH> # The model's weights file
 ```
 
+Console output :
+
+![None](images/training.png?raw=true "Training")
+
 # Training results :
 ![None](images/results.gif?raw=true "Training results")
